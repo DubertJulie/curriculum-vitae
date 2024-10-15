@@ -1,0 +1,181 @@
+  body {
+    min-height: 100%;
+    font-family: "Rubik", sans-serif;
+  }
+
+.bento-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5% 0.2%;
+}
+
+.introduction {
+    background-color: #FD6438; 
+    height: 200px; 
+    border-radius: 1.5vh; 
+    padding: 0 5%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.introduction h1 {
+    font-weight: 500;
+    color: #FBDE9C; 
+}
+
+.boutons-role {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bouton-role {
+  font-size: 1em;
+  padding: 0.6em 0.8em; 
+  border-radius: 3vh; 
+  margin: 0.5em 0 0 0; 
+}
+
+#graphiste {
+  background-color: #CFFE7A;
+  color: #00553E;
+}
+
+#arrow {
+  background-color: #FED12E;
+  color: #420203;
+}
+
+#dev {
+  background-color: #420203;
+  color: #EAB0C8;
+}
+
+.boutons-socials {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em 0;
+}
+
+.bouton-socials {
+  background-color: #CFFE7A;
+  border-radius: 1.5vh;
+  height: 60px;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+#linkedin {
+  background-color:#9D9DCF;
+  color:#00553E;
+  margin: 0 0.5em 0 0;
+}
+
+#github {
+  background-color:#CFFE7A;
+  color:#420203;
+  margin: 0 0.5em 0 0;
+}
+
+#notion {
+  background-color:#FED12E;
+  color:#FD6438;
+  margin: 0 0.5em 0 0;
+}
+
+#pinterest {
+  background-color:#FD6438;
+  color:#FBDE9C;
+  margin: 0;
+}
+
+.experience {
+  background-color: #F9BCCE; 
+  color:#420203;
+  max-width: 20%; 
+  border-radius: 1.5vh;
+  padding: 0.5em 1em 2em 2em;
+  margin: 0.5% 0.2%;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+.exp-titre {
+font-size: 1em;
+font-weight: 500;
+margin-top: 0.5em;
+}
+
+.exp-details {
+font-size: 0.9em;
+font-weight: 400;
+}
+
+.formation {
+  background-color: #00553E; 
+  color: #CFFE7A;
+  max-width: 20%; 
+  border-radius: 1.5vh;
+  padding: 0.5em 4em 2em 2em;
+  margin: 0.5% 0.2%;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.form-titre {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+.autres {
+  margin: 0.5% 0.2%;
+}
+
+.competences {
+  background-color: #FED12E; 
+  color: #00553E;
+  border-radius: 1.5vh;
+  padding: 0.5em 4em 2em 2em;
+  margin: 0.5% 0 0.5em 0;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.hobbies {
+  background-color: #FD6438; 
+  color: #FBDE9C;
+  border-radius: 1.5vh;
+  padding: 0.5em 4em 2em 2em;
+  margin: 0.5%;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .bento-grid {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience {
+    max-width: 100%;
+  }
+}
