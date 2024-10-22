@@ -1,40 +1,63 @@
-  body {
-    min-height: 100%;
+:root {
+  --orange: #FD6438;
+  --rose: #FCB1CA;
+  --vert: #CFFE7A;
+  --jaune: #FED12E;
+  --marron: #420203;
+  --creme: #FBDE9C;
+  --vertfonce: #00553E;
+  --mauve: #9D9DCF;
+  --padding-general: 0.5em;
+  --border-radius: 1.5vh;
+  --font-main: "Rubik", sans-serif;
+}
+  
+body {
     font-family: "Rubik", sans-serif;
-  }
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    min-height: 100vh; /* Assure que l’élément est centré verticalement dans la page */
+}
 
 .bento-grid {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  
+  resize: horizontal;
+  box-sizing: border-box; 
+  width: 80vw;
+  height: auto;  
 }
 
 .hello {
   display: flex;
   flex-direction: column;
   margin: 0.5% 0.2%;
+  flex: auto;
 }
 
 .introduction {
-    background-color: #FD6438; 
-    height: 200px; 
-    border-radius: 1.5vh; 
-    padding: 0 5%;
-    display: flex;
-    align-items: flex-end;
+  background-color: var(--orange); 
+  flex: 6;
+  border-radius: 1.5vh; 
+  padding: 0 5%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .introduction h1 {
-    font-weight: 500;
-    color: #FBDE9C; 
+  font-weight: 500;
+  color: var(--creme); 
 }
 
 .boutons-role {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .bouton-role {
@@ -45,70 +68,81 @@
 }
 
 #graphiste {
-  background-color: #CFFE7A;
-  color: #00553E;
+  background-color: var(--vert);
+  color: var(--vertfonce);
+  margin: 0.5em 0.3em 0 0;
 }
 
 #arrow {
-  background-color: #FED12E;
-  color: #420203;
+  background-color: var(--jaune);
+  color: var(--marron);
+  margin: 0.5em 0.3em 0 0;
 }
 
 #dev {
-  background-color: #420203;
-  color: #EAB0C8;
+  background-color: var(--marron);
+  color: var(--rose);
 }
 
 .boutons-socials {
   display: flex;
   flex-direction: row;
-  margin: 0.5em 0;
+  resize: horizontal;
+  margin: 0.5em 0 0 0;
+  flex: 2;
 }
 
 .bouton-socials {
-  background-color: #CFFE7A;
   border-radius: 1.5vh;
-  height: 60px;
-  width: 100%;
+  flex: auto;
+  padding: 0.5vh;
   align-content: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: 500;
+  vertical-align: center;
+}
+
+.bouton-socials img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons-socials {
+  width: 4vh;
 }
 
 #linkedin {
-  background-color:#9D9DCF;
-  color:#00553E;
-  margin: 0 0.5em 0 0;
+  background-color: var(--mauve);
+  color: var(--vertfonce);
+  margin: 0 0.3em 0 0;
 }
 
 #github {
-  background-color:#CFFE7A;
-  color:#420203;
-  margin: 0 0.5em 0 0;
+  background-color: var(--vert);
+  color: var(--marron);
+  margin: 0 0.3em 0 0;
 }
 
 #notion {
-  background-color:#FED12E;
-  color:#FD6438;
-  margin: 0 0.5em 0 0;
+  background-color: var(--jaune);
+  color: var(--orange);
+  margin: 0 0.3em 0 0;
 }
 
 #pinterest {
-  background-color:#FD6438;
-  color:#FBDE9C;
-  margin: 0;
+  background-color: var(--orange);
+  color: var(--creme);
 }
 
 .experience {
-  background-color: #F9BCCE; 
-  color:#420203;
-  max-width: 20%; 
+  background-color: var(--rose); 
+  color: var(--marron);
+  flex: auto;
   border-radius: 1.5vh;
   padding: 0.5em 1em 2em 2em;
   margin: 0.5% 0.2%;
   font-size: 0.8em;
   font-weight: 300;
+  max-width: 60ch;
 }
 
 h1 {
@@ -116,25 +150,27 @@ h1 {
 }
 
 .exp-titre {
-font-size: 1em;
-font-weight: 500;
-margin-top: 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 0.5em;
 }
 
 .exp-details {
-font-size: 0.9em;
-font-weight: 400;
+  font-size: 0.9em;
+  font-weight: 400;
 }
 
 .formation {
-  background-color: #00553E; 
-  color: #CFFE7A;
-  max-width: 20%; 
+  background-color: var(--vertfonce); 
+  color: var(--vert);
+  /* max-width: 20%; */
+  flex: auto;
   border-radius: 1.5vh;
   padding: 0.5em 4em 2em 2em;
   margin: 0.5% 0.2%;
   font-size: 0.8em;
   font-weight: 300;
+  max-width: 60ch;
 }
 
 .form-titre {
@@ -145,37 +181,43 @@ font-weight: 400;
 
 .autres {
   margin: 0.5% 0.2%;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .competences {
-  background-color: #FED12E; 
-  color: #00553E;
+  background-color: var(--jaune); 
+  color: var(--vertfonce);
   border-radius: 1.5vh;
   padding: 0.5em 4em 2em 2em;
   margin: 0.5% 0 0.5em 0;
   font-size: 0.8em;
   font-weight: 300;
+  flex: auto;
 }
 
 .hobbies {
-  background-color: #FD6438; 
-  color: #FBDE9C;
+  background-color: var(--orange); 
+  color: var(--creme);
   border-radius: 1.5vh;
   padding: 0.5em 4em 2em 2em;
-  margin: 0.5%;
+  margin: 0.5% 0;
   font-size: 0.8em;
   font-weight: 300;
+  flex: auto;
 }
 
-@media (max-width: 800px) {
-  .bento-grid {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+@media screen and (max-width: 1050px) {
   .experience {
+    background-color: var(--rose); 
+    color: var(--marron);
+    flex: auto;
+    border-radius: 1.5vh;
+    padding: 0.5em 1em 2em 2em;
+    margin: 0.5% 0.2%;
+    font-size: 0.8em;
+    font-weight: 300;
     max-width: 100%;
   }
 }
